@@ -66,8 +66,8 @@
         border-bottom: gray 1px solid;
       }
       .avatar {
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
         box-sizing: border-box;
         text-align: center;
       }
@@ -149,6 +149,9 @@
                </template>
                <template is="dom-if" if="{{_isCoffeeTime(item)}}">
                  <i class="coffee"></i>
+               </template>
+               <template is="dom-if" if="{{_isTravel(item)}}">
+                 <iron-icon icon="maps:directions-bus"></iron-icon>
                </template>
              </div>
 
@@ -254,8 +257,8 @@
                 if (currentSlot.endTime !== nextSlot.startTime) {
                   missingSlots.push({
                     onDay: activeDay.id,
-                    name: "Stream Session",
-                    description: "Please pick your stream to see the proper lecture here",
+                    name: "Sesja dla streamu",
+                    description: "Prosze wybierz swoj stream aby zobaczyc szczegoly agendy",
                     startTime: currentSlot.endTime,
                     endTime:nextSlot.startTime,
                     labels: [],
@@ -346,6 +349,9 @@
         },
         _isCoffeeTime: function(item){
           return item.labels.indexOf(5)!==-1 && item.labels.indexOf(2)!==-1;
+        },
+        _isTravel: function(item){
+          return item.labels.indexOf(6)!==-1;
         },
 
 
