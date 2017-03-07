@@ -1,1 +1,1 @@
-# apps-evolve-summit-2017
+# IT Survival Agenda 2017
