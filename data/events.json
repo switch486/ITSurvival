@@ -229,16 +229,7 @@
 
 
 
-  {
-    "id": 201,
-    "onDay": 3,
-    "startTime": "6:00",
-    "endTime": "6:20",
-    "name": "Rozgrzewka",
-    "description": "Poranna rozgrzewka na świeżym powietrzu z Rafałem",
-    "labels": [3],
-    "stream": null
-  },{
+{
     "id": 202,
     "onDay": 3,
     "startTime": "7:00",
@@ -285,6 +276,15 @@
     "stream": null
   },{
     "id": 207,
+    "onDay": 3,
+    "startTime": "13:30",
+    "endTime": "14:00",
+    "name": "Pakowanie / Czas wolny",
+    "description": "Zbieramy rzeczy i czekamy na tansport",
+    "labels": [4],
+    "stream": null
+  },{
+    "id": 208,
     "onDay": 3,
     "startTime": "14:00",
     "endTime": "14:01",
